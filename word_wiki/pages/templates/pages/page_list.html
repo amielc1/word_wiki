@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% block page_title %}word wiki | {% endblock %}
+
+{% block page_content %}
+<h1>Blog Posts</h1>
+<ul>
+    {% for word in words %}
+    <li>{{ word.word }}</li>
+    {% empty %}
+    <li>Sorry, no posts yet. Check back soon!</li>
+    {% endfor %}
+</ul>
+{% endblock %}

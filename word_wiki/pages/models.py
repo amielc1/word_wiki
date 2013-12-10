@@ -10,3 +10,5 @@ class Page(models.Model):
     def __unicode__(self):
         return self.word
 
+    class Meta:
+        ordering = ['word']

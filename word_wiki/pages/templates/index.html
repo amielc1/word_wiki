@@ -1,9 +1,9 @@
+<!doctype html>
 <html>
-<head><title></title></head>
-
-<body>
-
-{{ content }}
-
-</body>
+    <head>
+        <title>{% block page_title %}{% endblock %}Amiel</title>
+    </head>
+    <body>
+        {% block page_content %}{% endblock %}
+    </body>
 </html>
